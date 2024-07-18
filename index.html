@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  
+
+
+  <!-- displays site properly based on user's device -->
+   
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *
+    {
+      box-sizing: border-box;
+     
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      font-family: "Outfit", sans-serif;
+      padding: 10px;
+      margin-top: 200px;
+     background-color: hsl(217, 54%, 11%) ;
+ 
+      
+    }
+
+#container{
+
+  width: 400px;
+  height: 650px;
+  margin: 0 auto;
+  margin-bottom: 90px;
+  padding:30px;
+  border-radius: 20px;
+  background-color:hsl(216, 50%, 16%) ;
+ 
+}
+
+
+.equilibrium-image{
+width: 100%;
+height: 100%;
+border-radius: 10px;
+ /* background:url(./images/icon-view.svg) center center no-repeat; */
+   /* background-color: hsl(178, 100%, 50%);
+   background-size: cover; */
+   /* margin: auto; */
+/* position: relative; */
+
+}
+
+/* .equilibrium-image:hover{
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+} */
+
+
+
+.icon {
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   top: 240px;
+   opacity: 0;
+   background-color:hsl(178, 100%, 50%) ;
+   width: 340px;
+   height: 340px;
+   border-radius: 10px;
+}
+
+.icon:hover {
+   opacity: .5;
+   cursor: pointer;
+}
+
+
+.text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+
+h1{
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+
+h1:hover{
+  color:hsl(178, 100%, 50%) ;
+  cursor: pointer;
+}
+
+.paragragh-1{
+  color:hsl(215, 51%, 70%) ;
+}
+
+hr{
+position: relative;
+bottom: 25px;
+background-color:hsl(216, 50%, 16%) ;
+  /* background-color:hsl(215, 51%, 70%); */
+  /* border-color:hsl(216, 50%, 16%) ; */
+  border-color: hsl(217, 54%, 11%) ;
+  margin-bottom: 20px;
+}
+
+img#clock, img#ethereum {
+  float: left;
+  /* margin-bottom:  */
+}
+
+#clock{
+  margin-right: 10px;
+}
+
+#clock, .days{
+  position: relative;
+  left:200px;
+  bottom:35px;
+}
+
+#ethereum{ margin-right: 10px ;}
+
+#avatar{
+  float: left;
+  margin-right: 20px;
+  position: relative;
+  bottom: 30px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.creation{ 
+  position: relative;
+/* top: 10px; */
+bottom: 20px;
+}
+
+#Jules{ color:hsl(0, 0%, 100%) ; font-weight: 300; cursor: pointer; 
+
+}
+#Jules:hover{ color: hsl(178, 100%, 50%)
+  
+}
+
+
+  </style>
+</head>
+<body>
+  <main id="container">
+    <section>
+    
+  
+    <img src="./images/image-equilibrium.jpg" alt="equilibrium" class="equilibrium-image">
+
+   <div class="icon">
+      <img src="./images/icon-view.svg" alt="icon-view" class="icon-view">
+
+    </div>
+
+  
+    <h1>Equilibrium #3429</h1>
+
+
+    <p style="font-size: 18px; font-weight: 300;"  class="paragragh-1">Our Equilibrium collection promotes balance and calm.</p>
+
+
+    <img src="./images/icon-ethereum.svg" alt="ethereum-icon" id="ethereum">
+    <p style="color:hsl(178, 100%, 50%) ;"> 0.041 ETH</p>
+
+
+
+    <img src="./images/icon-clock.svg" alt="clock-icon" id="clock">
+
+    <p style="color: hsl(215, 51%, 70%); font-weight: 300;" class="days">3 days left</p>
+
+
+    </section>
+      <!-- <hr style="color:hsl(215, 51%, 70%) ;"> -->
+      <hr>
+      <img src="./images/image-avatar.png" alt="avatar" id="avatar" width="13%">
+      <footer> 
+        <p class="creation"><span style="color: hsl(215, 51%, 70%); font-weight: 300;">Creation of </span><span id="Jules">Jules Wyvern</span></p>
+          
+    
+      </footer>
+ </main>
+
+    <div class="attribution">
+
+      <span style="color: #ffffff; font-weight: 200;">Challenge by</span> <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      <span style="color: #ffffff; font-weight:200;">Coded by</span> <a href="#">Jessica Bassaw</a>.
+    </div>
+  
+</body>
+</html>
